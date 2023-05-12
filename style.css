@@ -12,32 +12,20 @@ font-family: 'Montserrat', sans-serif;
 
 /*UTILITIES*/
 .container {
-max-width: 576px;
-margin: 0 auto;
+    min-width: 576px;
+    margin: 0 auto;
 }
 
 .border {
     border: 2px dashed lightgray;
 }
 
-/*FOOTER*/
-footer {
-    min-height: 100px;
-    background-color: rgb(40,40,40);
-    width: 100%;
-    box-shadow: 0 1px 3px gray;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
 /*DIVISIONE INIZIALE DEI CONTENITORI*/
 .up-container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    width: 100%;
     min-height: 1000px;
+    overflow: auto;
 }
 
 .sidebar {
@@ -49,15 +37,14 @@ main {
     flex-basis: 90%;
     display: flex;
     flex-direction: column;
-    overflow: auto;
 }
 
 header {
+    flex-basis: 10%;
     min-height: 100px;
     background-color: rgb(8,11,18);
     width: 100%;
     box-shadow: 0 1px 3px gray;
-    flex-basis: 10%;
 }
 
 .content {
@@ -65,9 +52,42 @@ header {
     background-color: rgb(20,25,34);
 }
 
+footer {
+    min-height: 100px;
+    background-color: rgb(40,40,40);
+    box-shadow: 0 1px 3px gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
-/*MEDIA QUERY PER SCHERMO OLTRE 768PX*/
 
-/*MEDIA QUERY PER SCHERMO OLTRE 992PX*/
+/*MEDIA QUERY PER SCHERMO DA 576PX A 768PX*/
+@media screen and (min-width: 768px) {
+    .container {
+        min-width: 700px;
+    }
 
-/*MEDIA QUERY PER SCHERMO 1200PX*/
+    .sidebar {
+        flex-basis: 25%;
+    }
+        
+      main {
+         flex-basis: 75%;
+    }
+}
+
+/*MEDIA QUERY PER SCHERMO DA 768PX A 992PX*/
+@media screen and (min-width: 992px) {
+    .container {
+        min-width: 900px;
+    }
+}
+
+/*MEDIA QUERY PER SCHERMO DA 992PX A 1200PX*/
+@media screen and (min-width: 1200px) {
+    .container {
+        min-width: 1100px;
+    }
+}
