@@ -71,6 +71,9 @@ header {
     background-color: rgb(8,11,18);
     width: 100%;
     box-shadow: 0 1px 3px gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .content {
@@ -123,6 +126,24 @@ footer {
 
 .sidebar-down {
     width: fit-content;
+}
+
+/*BUTTON*/
+.header-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20%;
+    height: 40px;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*MEDIA QUERY PER SCHERMO DA 576PX A 768PX*/
