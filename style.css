@@ -140,10 +140,38 @@ footer {
 }
 
 /*FOOTER*/
-footer {
+.footer-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+.footer-navbar-left {
+    flex-basis: 30%;
+    margin-top: 10px;
+    height: 80px;
+    display: flex;
+}
+
+.left-content {
+    flex-basis: calc(100% / 3);
+}
+
+.footer-navbar-center {
+    flex-basis: 40%;
+    margin-top: 10px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-content {
+    flex-basis: calc(100% / 2);
+}
+
+.footer-navbar-right {
+    flex-basis: 30%;
+    margin-top: 10px;
+    height: 80px;
 }
 
 /*MEDIA QUERY PER SCHERMO DA 576PX A 768PX*/
