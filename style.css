@@ -280,6 +280,65 @@ h3 {
     padding-top: 5px;
 }
 
+/*HOVER*/
+.main-navbar li:hover {
+    color: white;
+}
+
+.header-btn:hover {
+    height: 50px;
+    font-size: 25px;
+} 
+
+.sidebar-up li:hover {
+    list-style-type: none;
+    color: white;
+}
+
+.sidebar-up span:hover {
+    color: white;
+}
+
+.sidebar-up i:hover {
+    color: white;
+}
+
+.sidebar-up li:hover {
+    color: white;
+}
+
+.left-content i:hover {
+    color: white;
+}
+
+.progress-bar .value:hover {
+    background-color: lightgreen;
+}
+
+.fa-circle-play:hover {
+    font-size: 20px;
+}
+
+.hover-play {
+    display: none;
+}
+
+.music-card {
+    position: relative;
+}
+
+.music-card:hover {
+    opacity: 0.5;
+}
+
+.music-card-img:hover .hover-play {
+    display: inline;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-size: 50px;
+}
+
 /*MEDIA QUERY PER SCHERMO DA 576PX A 768PX*/
 @media screen and (min-width: 768px) {
     .container {
