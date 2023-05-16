@@ -311,11 +311,21 @@ h3 {
     .container {
         min-width: 900px;
     }
+
+    .music-card {
+        flex-basis: calc(100% / 4 - 10px);
+        max-height: 300px;
+        max-width: 280px;
+    }
 }
 
 /*MEDIA QUERY PER SCHERMO DA 992PX A 1200PX*/
 @media screen and (min-width: 1200px) {
     .container {
         min-width: 1100px;
+    }
+
+    .music-card {
+        flex-basis: calc(100% / 6 - 10px);
     }
 }
